@@ -11,7 +11,7 @@ A demo app can be found here: https://play.google.com/store/apps/details?id=com.
 Setup
 -----
 
-####**Dependencies**
+#### **Dependencies**
 
 Add this to your Gradle build file:
 ```
@@ -20,7 +20,7 @@ dependencies {
 }
 ```
 
-####**Manifest**
+#### **Manifest**
 
 Define the contact picker Activity and the READ_CONTACTS permission in the manifest:
 ```
@@ -41,7 +41,7 @@ Define the contact picker Activity and the READ_CONTACTS permission in the manif
 Note: if your app targets Android 6 and higher (API level 23 and above), you also need to request the contacts permission at run-time.
 Check out the demo app for an example how this can be done.
  
-####**Usage**
+#### **Usage**
 
 Call the contact picker like this (see Javadoc for a description of the individual parameters):
 ```
@@ -81,7 +81,7 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
 The source code includes a more comprehensive example.<br>Also check out the demo app on Google Play: https://play.google.com/store/apps/details?id=com.onegravity.contactpicker.demo.
 
-####**Intent Extra Parameters**
+#### **Intent Extra Parameters**
 
 As seen above in the example, these parameters are chained to the intent where each param descriptor is attached to `ContactPickerActivity`. 
 Below is a listing of the parameters and their purpose:
@@ -93,7 +93,7 @@ Below is a listing of the parameters and their purpose:
 |  **EXTRA_SHOW_CHECK_ALL** (Boolean)  |  This parameter decides whether to show/hide the check_all button in the menu. When `EXTRA_SELECT_CONTACTS_LIMIT` > 0, this will be forced to `false`.  <br/> Default: `true` |
 |  **EXTRA_ONLY_CONTACTS_WITH_PHONE** (Boolean)  |  This parameter sets the boolean that filters contacts that have no phone numbers <br/> Default: `false` |
 
-####**Theming**
+#### **Theming**
 
 The library supports a dark and a light theme out-of-the-box. In order to do that, it defines a
 couple of custom attributes in attrs.xml.
