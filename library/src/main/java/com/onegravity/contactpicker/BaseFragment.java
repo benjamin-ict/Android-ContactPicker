@@ -76,6 +76,7 @@ public abstract class BaseFragment extends Fragment implements SearchView.OnQuer
                                     List<? extends ContactElement> elements) {
         mRootLayout = inflater.inflate(layoutId, null);
         mRecyclerView = (RecyclerView) mRootLayout.findViewById(android.R.id.list);
+        mRecyclerView.setVerticalScrollBarEnabled(false);
         mFastScroll = mRootLayout.findViewById(R.id.fast_scroller);
         mSectionIndex = mRootLayout.findViewById(R.id.fast_scroller_section_title_indicator);
         mEmptyView = mRootLayout.findViewById(android.R.id.empty);
