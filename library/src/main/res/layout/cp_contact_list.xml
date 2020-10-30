@@ -15,7 +15,8 @@
         android:id="@+id/fast_scroller"
         android:layout_width="25dp"
         android:layout_height="match_parent"
-        android:layout_alignParentRight="true"/>
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <com.onegravity.contactpicker.contact.ContactSectionIndexer
         android:id="@+id/fast_scroller_section_title_indicator"
